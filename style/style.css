@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Yu Gothic UI";
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #0e0511;
+    box-shadow: 0px 15px 25px #0e0511;
+    z-index: 9;
+    position: relative;
+}
+
+main{
+    background-image: url(/images/back.jpg);
+    width: auto;
+    height: 100vh;
+}
+
+.mut{
+    padding: 30px;
+    display: flex;
+}
+
+.mut-img{
+    border: 5px solid black;
+    width: 140px;
+    transition: 0.5s;
+}
+
+.desc{
+    background-color: #fff;
+    border: 5px solid black;
+    opacity: 0;
+    transition: 1.5s;
+    max-width: 300px;
+}
+
+.mut-img:hover{
+    width: 210px;
+}
+
+.visible{
+    opacity: 100%;
+}
+
+.desc>h1{
+    margin: 5px 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.desc>p{
+    margin: 10px 15px;
+    text-align: justify;
+}
