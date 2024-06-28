@@ -13,8 +13,8 @@ header {
     position: relative;
 }
 
-main {
-    background-image: url(images/back.jpg);
+body {
+    background-image: url(/images/back.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -24,21 +24,22 @@ main {
 
 .mut {
     margin: 30px;
-    display: inline-flex;
+    display: table-cell;
+    padding: 50px;
 }
 
 .mut-img {
     border: 5px solid black;
-    width: 140px;
-    transition: 0.5s;
-    height: 180px;
+    width: 210px;
+    transition: 1s;
+    height: 280px;
 }
 
 .desc {
     background-color: #fff;
     border: 5px solid black;
     transition: 2s;
-    max-width: 300px;
+    max-width: 310px;
     display: none;
 }
 
@@ -54,8 +55,8 @@ main {
 }
 
 .mut:hover .mut-img {
-    width: 210px;
-    height: 250px;
+    width: 310px;
+    height: 380px;
 }
 
 .mut:hover .desc {
@@ -67,4 +68,17 @@ main {
     margin: 10px 15px;
     text-align: justify;
     text-indent: 25px;
+}
+
+.alldivs{
+    display: table;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.row{
+    display: table-row;
+    
+    text-align: center;
+    vertical-align: middle;
 }

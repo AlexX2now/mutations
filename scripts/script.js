@@ -1,31 +1,24 @@
-//first mut
-function hoverOnImgF(){
-    document.querySelector('.first').classList.add("visible");
+function hoverOffImg(name){
+switch (name){
+    case "rhino skin":
+        document.querySelector('.first').classList.add("visible");
+    break;
+    case "extra feet":
+        document.querySelector('.second').classList.add("visible");
+    break;
+    case "hammerhead":
+        document.querySelector('.third').classList.add("visible");
+    break;
+    case "impact":
+        document.querySelector('.four').classList.add("visible");
+    break;
 }
-function hoverOffImgF(){
+}
+
+
+function closeall(){
     document.querySelector('.first').classList.remove("visible");
-}
-
-//second mut
-function hoverOnImgS(){
-    document.querySelector('.second').classList.add("visible");
-}
-function hoverOffImgS(){
     document.querySelector('.second').classList.remove("visible");
-}
-
-//third mut
-function hoverOnImgT(){
-    document.querySelector('.third').classList.add("visible");
-}
-function hoverOffImgT(){
     document.querySelector('.third').classList.remove("visible");
-}
-
-//four mut
-function hoverOnImgI(){
-    document.querySelector('.four').classList.add("visible");
-}
-function hoverOffImgI(){
     document.querySelector('.four').classList.remove("visible");
 }
